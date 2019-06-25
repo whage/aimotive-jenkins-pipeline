@@ -5,4 +5,4 @@ COPY build_yaml_cpp.sh /tmp/build_yaml_cpp.sh
 
 RUN /tmp/install_deps.sh
 
-ENTRYPOINT /tmp/build_yaml_cpp.sh
+ENTRYPOINT ["/tmp/build_yaml_cpp.sh"]
